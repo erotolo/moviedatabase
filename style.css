@@ -1,0 +1,266 @@
+body{
+  background-color: #18172D;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 300px;
+}
+/* Login, favourite list and account pages */
+#headericons{
+  position: absolute;
+  top: 8px;
+  right: 50px;
+  font-size: 30px;
+   display: flex;
+   justify-content: right;
+   padding-right: 4px;
+}
+.signinbutton{
+   padding-right:10px;
+}
+.favouritelist{
+   padding-right:10px;
+}
+#headericons a .fa-user-circle,
+#headericons a .fa-heart{
+  color: white;
+  transition: 0.4s;
+  padding-top: 10px;
+}
+#headericons a .fa-user-circle:hover{
+  color: green;
+}
+#headericons a .fa-heart:hover{
+  color: red;
+}
+.loginbutton {
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+ border: 2px solid green;
+}
+.loginbutton:hover {
+  background-color: white;
+  color: green;
+}
+
+/*Logo styling */
+.title {
+      color: white;
+  font-size: 26px;
+  vertical-align:middle;
+  line-height:100%;
+  text-align:center;
+  display:block;
+  padding-top: 50px;
+    align-content: center;
+
+}
+
+.title img {
+  height:150px;
+  width: auto;
+}
+/* SEARCH PAGE STYLING */
+/*Searchbar styling */
+.searchbar {
+
+      color: white;
+  font-size: 26px;
+  vertical-align:middle;
+  line-height:100%;
+  text-align:center;
+  display:block;
+  padding-top: 50px;
+    align-content: center;
+
+}
+input[type=text]{
+  padding:0px 50px;
+}
+input[type=submit] {
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 2px 20px;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 12px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+ border: 2px solid green;
+}
+input[type=submit]:hover{
+  background-color: white;
+  color: green;
+}
+
+.searchresults{
+  padding-top: 30px;
+}
+.searchresults img {
+    text-align:center;
+    padding-left: 60px;
+    padding-bottom: 50px;
+  height:500px;
+  width:auto;
+
+}
+/* FILM INFO PAGE STYLING */
+/* Film info page */
+.parallax {
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Movie title styling for parallax */
+.parallaxtitle{
+  position: absolute;
+  text-align:center;
+  width: 300px;
+  height: 200px;
+  padding-top: 180px;
+  vertical-align:middle;
+  margin: auto;
+  width: 100%;
+  line-height:200px;
+}
+.parallaxtitle h2{
+  color: white;
+  background-color: black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  display: inline-table;
+  vertical-align:middle;
+  line-height:100%;
+  text-align:center;
+  align-content: center;
+}
+
+.content{
+  padding-top: 60px;
+}
+.filmtitle {
+  color:white;
+font-size: 26px;
+vertical-align:middle;
+line-height:100%;
+text-align:center;
+display:block;
+padding-top: 20px;
+align-content: center;
+
+}
+
+.filmposter img {
+padding-top: 10px;
+height:600px;
+width:auto;
+}
+.table{
+  color: white;
+}
+th{
+  font-size: 18px;
+}
+.fa-star{
+  font-size: 20px;
+  color:yellow;
+}
+#addfave a {
+  color:white;
+  transition: 0.4s;
+}
+#addfave :hover{
+  color: red;
+}
+#addfave a{
+color: white;
+}
+#addfave .fa-heart {
+  align-content: center;
+  font-size: 30px;
+  padding-left: 35px;
+
+}
+#removefave{
+  padding-left: 300px;
+}
+#removefave .fa-heart-broken {
+  align-content: center;
+  font-size: 30px;
+  padding-left: 35px;
+
+}
+#removefave a {
+  color:white;
+  transition: 0.4s;
+}
+#removefave :hover{
+  color: red;
+}
+#removefavea{
+color: white;
+}
+
+#removefave .fa-heart-broken {
+  align-content: center;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+/* Movie Auth page */
+.movieauth {
+  color: white;
+font-size: 26px;
+vertical-align:middle;
+line-height:100%;
+text-align:center;
+display:block;
+padding-top: 50px;
+align-content: center;
+padding-top: 200px;
+}
+
+/* Favourites Page */
+.favouritestitle{
+ color: white;
+  font-size: 26px;
+  vertical-align:middle;
+  line-height:100%;
+  text-align:center;
+  display:block;
+  padding-top: 50px;
+    align-content: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .title img {
+    height:95px;
+    width: auto;
+    }
+    .searchresults{
+      padding-left: 30px;
+    }
+  }
